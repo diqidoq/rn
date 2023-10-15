@@ -9,8 +9,8 @@ If your executables folder would be under yourusername/bin and your default shel
 
 ```
 cd userfolder
-git clone git@github.com:diqidoq/di.git
-ln -s ~/di/bin/* ~/bin/
+git clone git@github.com:diqidoq/rn.git
+ln -s ~/rn/bin/* ~/bin/
 chmod u+x ~/bin/*
 source ~/.bashrc
 ```  
