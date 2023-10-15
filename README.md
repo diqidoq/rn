@@ -13,4 +13,7 @@ git clone git@github.com:diqidoq/rn.git
 ln -s ~/rn/bin/* ~/bin/
 chmod u+x ~/bin/*
 source ~/.bashrc
-```  
+```
+
+## How to use
+Simply run ```rn before after``` to renamse files and replace pattern in strings of all files in directory recursively. Each step will be confirmed so that you can leave out one of both methods. Run ```rn before``` only to simply remove the pattern from files and/or strings in files.

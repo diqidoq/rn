@@ -19,7 +19,7 @@ rn_init () {
   EXECUTE () {
     CONFIRM "${1}"
     if [[ ${REPLY} =~ ^([yY][eE][sS]|[yY])$ ]] ; then
-      $2 $3 $4 ; COMPLETED "${1}"
+      $2 "${3}" "${4}" ; COMPLETED "${1}"
     else
       SKIP
     fi
@@ -27,7 +27,7 @@ rn_init () {
 }
 
 rn_run () {
-  if [ $# -lt 2 ] ; then
+  if [ $# -lt 1 ] ; then
     NO_ARG ; ABORD
   else
     EXECUTE "rename files recursively" rn_files $@;
